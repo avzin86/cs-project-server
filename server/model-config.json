@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Customer": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Direction": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Profile": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Competence": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Skill": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Achievement": {
+    "dataSource": "MongoDB",
+    "public": true
+  }
+}

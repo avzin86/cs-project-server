@@ -1,0 +1,36 @@
+<br>
+<br>
+
+<div class="row">
+    <div class="col-xs-2">
+    </div>
+    <div class="col-xs-7">
+        <div ng-if="!showContent">
+            {{message}}
+        </div>
+
+        <div ng-if="showContent">
+            <h1 class="text-center">Manage Achievements</h1>
+            <br>
+            <button id="test" type="button" class="btn btn-warning button-xs center-block" ng-click="addNewAchievement()"><i class="icon ion-document"></i> New Achievement</button>
+        </div>
+
+        <div ng-if="showContent">
+            <ol >
+                    <li ng-repeat="achiv in achievements" class="h4">
+                        {{achiv.name}}, {{achiv.date | date:'dd MMM yyyy'}}&nbsp;&nbsp;
+                        <button type="button" class="btn btn-primary button-xs" ng-click="editAchievement(achiv)"><i class="icon ion-compose"></i></button>
+                        <button type="button" class="btn btn-danger button-xs" ng-click="removeAchievement(achiv)"><i class="icon ion-close"></i></button>
+
+                    </li>
+            </ol>
+
+        </div>
+    </div>
+
+
+    <div class="col-xs-3">
+
+    </div>
+
+</div>

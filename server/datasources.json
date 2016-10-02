@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MongoDB": {
+    "host": "169.44.124.126",
+    "port": 27017,
+    "url": "mongodb://169.44.124.126:27017/icandoitapp",
+    "database": "icandoitapp",
+    "password": "",
+    "name": "MongoDB",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
